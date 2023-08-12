@@ -1,86 +1,54 @@
-<<<<<<< HEAD
-# Turborepo starter
+# 微前端与Monorepo架构实践demo
 
-This is an official starter Turborepo.
+本项目是一个关于微前端与Monorepo架构实践的示例项目。我们展示如何在实际的项目开发中结合微前端与Monorepo的优点，实现高效的代码管理和团队协作开发。
 
-## Using this example
+## 准备工作
 
-Run the following command:
+确保您的计算机上已经安装以下环境：
+- Node.js (推荐使用版本 14.x 或以上)
+- pnpm (作为包管理工具)
 
-```sh
-npx create-turbo@latest
+## 快速上手
+
+1. 克隆此项目：
+
+```bash
+git clone https://github.com/yukiyukixing/micro-monorepo.git
 ```
 
-## What's inside?
+1. 进入项目目录并安装依赖：
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
+```bash
+cd micro-monorepo
+pnpm i
 ```
 
-### Develop
+1. 启动项目：
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
+```bash
 pnpm dev
 ```
 
-### Remote Caching
+此时，主应用项目会在`localhost:8080`上运行。您可以打开浏览器，访问该地址来查看项目效果。
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+## 项目目录结构
 
 ```
-cd my-turborepo
-npx turbo login
+micro-monorepo
+│
+├── main/               # 主应用，集成各个微前端应用
+│
+├── micro1/             # 微前端应用1
+│
+├── micro2/             # 微前端应用2
+│
+└── ...                 # 其他配置文件和目录
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+## 贡献指南
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+如果您希望为此项目做出贡献，我们非常欢迎！请确保在提交PR之前阅读了我们的贡献指南。
 
-```
-npx turbo link
-```
+## 联系方式
 
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
-=======
-# micro-monorepo
-微前端与Monorepo架构实践demo
->>>>>>> ae3c4223d74f83d1edf8d3a258a07f654bda30cc
+如有任何问题或建议，欢迎在GitHub Issues中提出，或通过邮件与我们联系。
