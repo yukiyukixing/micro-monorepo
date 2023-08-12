@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Turborepo starter
 
 This is an official starter Turborepo.
@@ -79,3 +80,7 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+=======
+# micro-monorepo
+微前端与Monorepo架构实践demo
+>>>>>>> ae3c4223d74f83d1edf8d3a258a07f654bda30cc
