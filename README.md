@@ -34,13 +34,13 @@ pnpm dev
 ## 项目目录结构
 
 ```
-micro-monorepo
+micro-monorepo/
 │
 ├── main/               # 主应用，集成各个微前端应用
 │
-├── micro1/             # 微前端应用1
-│
-├── micro2/             # 微前端应用2
+├── micro/              # 微前端应用目录
+│   ├── micro1/         # 微前端应用1
+│   ├── micro2/         # 微前端应用2
 │
 └── ...                 # 其他配置文件和目录
 ```
