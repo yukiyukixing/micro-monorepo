@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint --fix src/**/*.js"
   },
   "keywords": [],
   "author": "",

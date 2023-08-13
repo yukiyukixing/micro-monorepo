@@ -9,7 +9,7 @@ module.exports = {
   entry: resolvePath('src', 'index.js'),
   stats: 'errors-warnings',
   output: {
-    path: resolvePath('dist'),
+    path: resolvePath('../../dist/micro2'),
     filename: 'bundle.js',
   },
   module: {
